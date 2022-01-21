@@ -1,0 +1,138 @@
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.name "Parvathi"
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.name
+Parvathi
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.email "parvathiajith97@gmail.com"
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.email
+parvathiajith97@gmail.com
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git clone https://github.com/libgit2/libgit2
+fatal: destination path 'libgit2' already exists and is not an empty directory.
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git status
+
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Desktop/DevopsSRE/Ansible.txt
+        deleted:    Desktop/DevopsSRE/CICDpipeline.docx
+        deleted:    Desktop/DevopsSRE/CICDpipeline.pdf
+        deleted:    Desktop/DevopsSRE/Dockerclassroom.docx
+        
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        -1.14-windows.xml
+        .bash_history
+        .docker/
+        .gitconfig
+        .idlerc/
+        .kube/
+        .lesshst
+        .viminfo
+        
+        Desktop/DevopsTrainingfinalproject/
+        Desktop/Discord.lnk
+        Desktop/Dockerclassroom.pdf
+        Desktop/Imp Devops notes links.docx
+        Desktop/MCQs.docx
+        Desktop/Virtualisation.pdf
+        Desktop/desktop.ini
+       
+        PycharmProjects/
+        Saved Games/
+        Searches/
+        VLC media player.lnk
+        Videos/
+        create frnds list.py
+        getting-started/
+        libgit2/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git status -s
+
+?? -1.14-windows.xml
+?? .bash_history
+?? .docker/
+?? .gitconfig
+?? .idlerc/
+?? .kube/
+?? .lesshst
+?? .viminfo
+?? .vscode/
+?? "3D Objects/"
+?? AppData/
+?? Contacts/
+?? Desktop/DevopsTrainingfinalproject/
+?? Desktop/Discord.lnk
+?? Desktop/Dockerclassroom.pdf
+?? "Desktop/Imp Devops notes links.docx"
+?? Desktop/MCQs.docx
+?? Desktop/Virtualisation.pdf
+?? Desktop/desktop.ini
+?? "Desktop/workspace visual studio.code-workspace"
+?? Documents/
+?? Downloads/
+?? Favorites/
+?? IntelGraphicsProfiles/
+?? Links/
+?? Music/
+
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git commit --amend
+
+warning: could not open directory 'Application Data/': Permission denied
+
+[master 13700a0] Devops training
+ Date: Sat Jan 8 14:30:57 2022 +0530
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/DevopsSRE/CICDpipeline.pdf
+ create mode 100644 Desktop/DevopsSRE/Dockerclassroom.pdf
+ create mode 100644 Desktop/DevopsSRE/Dockerworkingwithasampleapplication.pdf
+ create mode 100644 Desktop/DevopsSRE/kubernetes.pdf
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git branch
+  carzy
+  crazy
+* master
+  switch
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git switch crazy
+Switched to branch 'crazy'
+D       Desktop/DevopsSRE/Dockerclassroom.docx
+D       Desktop/DevopsSRE/Dockerworkingwithasampleapplication.docx
+D       Desktop/DevopsSRE/Ubuntu.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (crazy)
+$ git switch master
+Switched to branch 'master'
+D       Desktop/DevopsSRE/Dockerclassroom.docx
+D       Desktop/DevopsSRE/Dockerworkingwithasampleapplication.docx
+D       Desktop/DevopsSRE/Ubuntu.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git merge crazy
+Already up to date.
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$

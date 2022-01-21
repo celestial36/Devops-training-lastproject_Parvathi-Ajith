@@ -1,0 +1,1500 @@
+parvathi98@LAPTOP-GIMPBL0O:~$ pwd
+/home/parvathi98
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcImpex       file.sh           input.sh            myfilewithvariables.sh  parurole           smil.yml
+AbcImpex       abcimpex       file.txt          loon                myfilewithvars.sh       parvathi_playbook  start-tomcat
+Alex           allperms       fileVariable.sh   loop.sh             myinfo.txt              playbook           sum.sh
+Amy            args.sh        filevariables.sh  mango.sh            newcreate               prime.sh           temp
+Dany           bashaliases    frndsinarray.sh   metafirms           odd_or_even.sh          reading.sh         tempy
+Employee.yml   bootcamp       fruit.sh          multicontnet.txt    oddnumber.sh            sayhi              tempy.txt
+Hashmum        bugfile.txt    func_demo.sh      multiplesof5.sh     oddnumbers.sh           script.sh          thoughts.txt
+InitialGalaxy  dore           helloscript.sh    mycommands.sh       parentfldr1             scriptfilevar.sh   world
+Play.yml       dragonfly.txt  hi                mycontnet.txt       parentfolder            shellfile          world.sh
+Sam            example.sh     hiscript.sh       myfileswithvar.sh   parrole                 shellfile.sh       xyz
+Thoughts       favfoods.sh    ifelse.sh         myfileswithvari.sh  paru_orchestrate.yml    shellscripting     zing
+abcIMpex       fibonacci.sh   initialgalaxy     myfilewithvar.sh    paru_playbook           shellvar.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ cd temp
+parvathi98@LAPTOP-GIMPBL0O:~/temp$ mkdir -p parentfolder/childfolder
+parvathi98@LAPTOP-GIMPBL0O:~/temp$ ls
+light  metafirms  mix.txt  mytext  mytext1  parentfolder
+parvathi98@LAPTOP-GIMPBL0O:~/temp$ cd parentfolder
+parvathi98@LAPTOP-GIMPBL0O:~/temp/parentfolder$ ls
+childfolder
+parvathi98@LAPTOP-GIMPBL0O:~/temp/parentfolder$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/temp$ cd /
+parvathi98@LAPTOP-GIMPBL0O:/$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ cd../..
+-bash: cd../..: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~$ cd temp
+parvathi98@LAPTOP-GIMPBL0O:~/temp$ cd ../..
+parvathi98@LAPTOP-GIMPBL0O:/home$ ls > outputfile.txt
+-bash: outputfile.txt: Permission denied
+parvathi98@LAPTOP-GIMPBL0O:/home$ touch file.txt
+touch: cannot touch 'file.txt': Permission denied
+parvathi98@LAPTOP-GIMPBL0O:/home$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:/$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ ls > outputfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ cat outputfile.txt
+ABCImpex
+AbcImpex
+Alex
+Amy
+Dany
+Employee.yml
+Hashmum
+InitialGalaxy
+Play.yml
+Sam
+Thoughts
+abcIMpex
+abcImpex
+abcimpex
+allperms
+args.sh
+bashaliases
+bootcamp
+bugfile.txt
+dore
+dragonfly.txt
+example.sh
+favfoods.sh
+fibonacci.sh
+file.sh
+file.txt
+fileVariable.sh
+filevariables.sh
+frndsinarray.sh
+fruit.sh
+func_demo.sh
+helloscript.sh
+hi
+hiscript.sh
+ifelse.sh
+initialgalaxy
+input.sh
+loon
+loop.sh
+mango.sh
+metafirms
+multicontnet.txt
+multiplesof5.sh
+mycommands.sh
+mycontnet.txt
+myfileswithvar.sh
+myfileswithvari.sh
+myfilewithvar.sh
+myfilewithvariables.sh
+myfilewithvars.sh
+myinfo.txt
+newcreate
+odd_or_even.sh
+oddnumber.sh
+oddnumbers.sh
+outputfile.txt
+parentfldr1
+parentfolder
+parrole
+paru_orchestrate.yml
+paru_playbook
+parurole
+parvathi_playbook
+playbook
+prime.sh
+reading.sh
+sayhi
+script.sh
+scriptfilevar.sh
+shellfile
+shellfile.sh
+shellscripting
+shellvar.sh
+smil.yml
+start-tomcat
+sum.sh
+temp
+tempy
+tempy.txt
+thoughts.txt
+world
+world.sh
+xyz
+zing
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Hello! everyone" > mytext.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ cat mytext.txt
+Hello! everyone
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "We are practicing some linux commands" > mytext1.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ cat mytext1.txt
+We are practicing some linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ cat mytext.txt mytext1.txt
+Hello! everyone
+We are practicing some linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ cat my*
+#!/bin/bash
+echo "Welcome to shell scripting"
+ls
+pwd
+ls -l
+touch mycommands.sh
+cat mycommands.sh
+
+mycontnet.txt is a file
+name="Parvathi Ajith"
+city="Trivandrum"
+Number="206"
+Salary="3.5LPA"
+Joiningdate="24/11/2021"
+echo "$name $city $Number $Salary $Joiningdate"
+
+#!/bin/bash
+
+
+Name = "Parvathi Ajith"
+echo $Name
+City = "Trivandrum"
+echo $City
+Number = "20627"
+echo $Number
+Salary = "3.5LPA"
+echo $Salary
+Joiningdate = "23rd November 2021"
+echo $Joiningdate
+
+
+name = "Parvathi Ajith"
+City = "Trivandrum"
+Number = 206279
+Salary = "3.5LPA"
+Joining date = "23 November 2021"
+
+echo "$name $City $Number $Salary $Joining date"
+
+nano command is used to get the nano editor to edit file texts. myinfo.txt is a file which I created using touch command.
+Hello! everyone
+We are practicing some linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ cat text*
+cat: 'text*': No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~$ cat mytext1.txt > newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ cat newtext
+We are practicing some linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ cat newtext
+We are practicing some linux commands
+Linux is a unix-like OS
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ echo "Linux is a unix-like OS" >> newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ cat newtext
+We are practicing some linux commands
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+parvathi98@LAPTOP-GIMPBL0O:~$ cat newtext
+We are practicing some linux commands
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+parvathi98@LAPTOP-GIMPBL0O:~$ less
+Missing filename ("less --help" for help)
+parvathi98@LAPTOP-GIMPBL0O:~$ less newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                mytext1.txt           parvathi_playbook  sum.sh
+AbcImpex       allperms       filevariables.sh  metafirms               newcreate             playbook           temp
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        newtext               prime.sh           tempy
+Amy            bashaliases    fruit.sh          multiplesof5.sh         odd_or_even.sh        reading.sh         tempy.txt
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumber.sh          sayhi              thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           oddnumbers.sh         script.sh          world
+Hashmum        dore           hi                myfileswithvar.sh       outputfile.txt        scriptfilevar.sh   world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfldr1           shellfile          xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parentfolder          shellfile.sh       zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  parrole               shellscripting
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_orchestrate.yml  shellvar.sh
+abcIMpex       file.sh        loon              myinfo.txt              paru_playbook         smil.yml
+abcImpex       file.txt       loop.sh           mytext.txt              parurole              start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~$ mv newtext textnew
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                mytext1.txt           playbook          temp
+AbcImpex       allperms       filevariables.sh  metafirms               newcreate             prime.sh          tempy
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        odd_or_even.sh        reading.sh        tempy.txt
+Amy            bashaliases    fruit.sh          multiplesof5.sh         oddnumber.sh          sayhi             textnew
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumbers.sh         script.sh         thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           outputfile.txt        scriptfilevar.sh  world
+Hashmum        dore           hi                myfileswithvar.sh       parentfldr1           shellfile         world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfolder          shellfile.sh      xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parrole               shellscripting    zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  paru_orchestrate.yml  shellvar.sh
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_playbook         smil.yml
+abcIMpex       file.sh        loon              myinfo.txt              parurole              start-tomcat
+abcImpex       file.txt       loop.sh           mytext.txt              parvathi_playbook     sum.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ cat textnew
+We are practicing some linux commands
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+Linux is a unix-like OS
+parvathi98@LAPTOP-GIMPBL0O:~$ cp textnew newtext
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                mytext1.txt           parvathi_playbook  sum.sh
+AbcImpex       allperms       filevariables.sh  metafirms               newcreate             playbook           temp
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        newtext               prime.sh           tempy
+Amy            bashaliases    fruit.sh          multiplesof5.sh         odd_or_even.sh        reading.sh         tempy.txt
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumber.sh          sayhi              textnew
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           oddnumbers.sh         script.sh          thoughts.txt
+Hashmum        dore           hi                myfileswithvar.sh       outputfile.txt        scriptfilevar.sh   world
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfldr1           shellfile          world.sh
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parentfolder          shellfile.sh       xyz
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  parrole               shellscripting     zing
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_orchestrate.yml  shellvar.sh
+abcIMpex       file.sh        loon              myinfo.txt              paru_playbook         smil.yml
+abcImpex       file.txt       loop.sh           mytext.txt              parurole              start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~$ whoami
+parvathi98
+parvathi98@LAPTOP-GIMPBL0O:~$ who
+parvathi98@LAPTOP-GIMPBL0O:~$ w
+ 20:40:45 up 37 min,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+parvathi98@LAPTOP-GIMPBL0O:~$ id
+uid=1000(parvathi98) gid=1000(parvathi98) groups=1000(parvathi98),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1005(docker)
+parvathi98@LAPTOP-GIMPBL0O:~$ who
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+Changing password for parvathi98.
+Current password:
+New password:
+Retype new password:
+You must choose a longer password
+New password:
+Retype new password:
+Bad: new password is too simple
+New password:
+Retype new password:
+passwd: password updated successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+Changing password for parvathi98.
+Current password:
+
+
+
+
+
+
+
+
+
+
+^[[Apasswd: Authentication token manipulation error
+passwd: password unchanged
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+Changing password for parvathi98.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ man ls
+parvathi98@LAPTOP-GIMPBL0O:~$ cd /
+parvathi98@LAPTOP-GIMPBL0O:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+parvathi98:x:1000:1000:,,,:/home/parvathi98:/bin/bash
+Amy:x:1001:1001::/home/Amy:/bin/sh
+Z:x:1002:1002::/home/Z:/bin/sh
+Diana:x:1003:1003::/home/Diana:/bin/sh
+AlexUser1:x:1004:1006::/home/AlexUser1:/bin/sh
+User1Alex:x:1005:1007::/home/User1Alex:/bin/sh
+user1Alex:x:1006:1008::/home/user1Alex:/bin/sh
+use1Alex:x:1007:1009::/home/use1Alex:/bin/sh
+user2Alex:x:1008:1010::/home/user2Alex:/bin/sh
+user3Sam:x:1009:1011::/home/user3Sam:/bin/sh
+user1Sam:x:1010:1012::/home/user1Sam:/bin/sh
+user1Amy:x:1011:1013::/home/user1Amy:/bin/sh
+user2Lora:x:1012:1014::/home/user2Lora:/bin/sh
+user3Phillip:x:1013:1015::/home/user3Phillip:/bin/sh
+user4Christo:x:1014:1016::/home/user4Christo:/bin/sh
+ddd:x:1015:1017::/home/ddd:/bin/sh
+ccc:x:1016:1018::/home/ccc:/bin/sh
+eee:x:1017:1019::/home/eee:/bin/sh
+ttt:x:1018:1020::/home/ttt:/bin/sh
+Sam:x:1019:1021::/home/Sam:/bin/sh
+mathew:x:1020:1022:first user,,,:/home/mathew:/bin/bash
+sam:x:1021:1023:second user,,,:/home/sam:/bin/bash
+alex:x:1022:1024:third user,,,:/home/alex:/bin/bash
+amy:x:1023:1025::/home/amy:/bin/sh
+dora:x:1024:1026:fourth user,,,:/home/dora:/bin/bash
+alen:x:1025:1027:first user,,,:/home/alen:/bin/bash
+dona:x:1026:1028:second user,,,:/home/dona:/bin/bash
+paru:x:1027:1029:new user paru,,,:/home/paru:/bin/bash
+timjag:x:1028:1030:timjag,,,:/home/timjag:/bin/bash
+orange:x:1029:1031:Mr Orange,,,:/home/orange:/bin/bash
+apple:x:1030:1033:Apple,,,:/home/apple:/bin/bash
+mango:x:1031:1034:Mango,,,:/home/mango:/bin/bash
+user1:x:1032:1035:user1,,,:/home/user1:/bin/bash
+user2:x:1033:1036:user2,,,:/home/user2:/bin/bash
+antona:x:1034:1037:antona,,,:/home/antona:/bin/bash
+alexander:x:1035:1039::/home/alexander:/bin/sh
+ladybug:x:1036:1041:,,,:/home/ladybug:/bin/bash
+parvathi98@LAPTOP-GIMPBL0O:/$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo useradd doggy
+[sudo] password for parvathi98:
+parvathi98@LAPTOP-GIMPBL0O:~$ cat etc/passwd
+cat: etc/passwd: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+parvathi98:x:1000:1000:,,,:/home/parvathi98:/bin/bash
+Amy:x:1001:1001::/home/Amy:/bin/sh
+Z:x:1002:1002::/home/Z:/bin/sh
+Diana:x:1003:1003::/home/Diana:/bin/sh
+AlexUser1:x:1004:1006::/home/AlexUser1:/bin/sh
+User1Alex:x:1005:1007::/home/User1Alex:/bin/sh
+user1Alex:x:1006:1008::/home/user1Alex:/bin/sh
+use1Alex:x:1007:1009::/home/use1Alex:/bin/sh
+user2Alex:x:1008:1010::/home/user2Alex:/bin/sh
+user3Sam:x:1009:1011::/home/user3Sam:/bin/sh
+user1Sam:x:1010:1012::/home/user1Sam:/bin/sh
+user1Amy:x:1011:1013::/home/user1Amy:/bin/sh
+user2Lora:x:1012:1014::/home/user2Lora:/bin/sh
+user3Phillip:x:1013:1015::/home/user3Phillip:/bin/sh
+user4Christo:x:1014:1016::/home/user4Christo:/bin/sh
+ddd:x:1015:1017::/home/ddd:/bin/sh
+ccc:x:1016:1018::/home/ccc:/bin/sh
+eee:x:1017:1019::/home/eee:/bin/sh
+ttt:x:1018:1020::/home/ttt:/bin/sh
+Sam:x:1019:1021::/home/Sam:/bin/sh
+mathew:x:1020:1022:first user,,,:/home/mathew:/bin/bash
+sam:x:1021:1023:second user,,,:/home/sam:/bin/bash
+alex:x:1022:1024:third user,,,:/home/alex:/bin/bash
+amy:x:1023:1025::/home/amy:/bin/sh
+dora:x:1024:1026:fourth user,,,:/home/dora:/bin/bash
+alen:x:1025:1027:first user,,,:/home/alen:/bin/bash
+dona:x:1026:1028:second user,,,:/home/dona:/bin/bash
+paru:x:1027:1029:new user paru,,,:/home/paru:/bin/bash
+timjag:x:1028:1030:timjag,,,:/home/timjag:/bin/bash
+orange:x:1029:1031:Mr Orange,,,:/home/orange:/bin/bash
+apple:x:1030:1033:Apple,,,:/home/apple:/bin/bash
+mango:x:1031:1034:Mango,,,:/home/mango:/bin/bash
+user1:x:1032:1035:user1,,,:/home/user1:/bin/bash
+user2:x:1033:1036:user2,,,:/home/user2:/bin/bash
+antona:x:1034:1037:antona,,,:/home/antona:/bin/bash
+alexander:x:1035:1039::/home/alexander:/bin/sh
+ladybug:x:1036:1041:,,,:/home/ladybug:/bin/bash
+doggy:x:1037:1042::/home/doggy:/bin/sh
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo adduser cat
+Adding user `cat' ...
+Adding new group `cat' (1043) ...
+Adding new user `cat' (1038) with group `cat' ...
+Creating home directory `/home/cat' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for cat
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+parvathi98@LAPTOP-GIMPBL0O:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,parvathi98
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:parvathi98
+fax:x:21:
+voice:x:22:
+cdrom:x:24:parvathi98
+floppy:x:25:parvathi98
+tape:x:26:
+sudo:x:27:parvathi98,orange
+audio:x:29:parvathi98
+dip:x:30:parvathi98
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:parvathi98
+sasl:x:45:
+plugdev:x:46:parvathi98
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:parvathi98
+lxd:x:118:
+parvathi98:x:1000:
+Amy:x:1001:
+Z:x:1002:
+Diana:x:1003:
+UstTraining:x:1004:
+docker:x:1005:parvathi98
+AlexUser1:x:1006:
+User1Alex:x:1007:
+user1Alex:x:1008:
+use1Alex:x:1009:
+user2Alex:x:1010:
+user3Sam:x:1011:
+user1Sam:x:1012:
+user1Amy:x:1013:
+user2Lora:x:1014:
+user3Phillip:x:1015:
+user4Christo:x:1016:
+ddd:x:1017:
+ccc:x:1018:
+eee:x:1019:
+ttt:x:1020:
+Sam:x:1021:
+mathew:x:1022:
+sam:x:1023:
+alex:x:1024:
+amy:x:1025:
+dora:x:1026:
+alen:x:1027:
+dona:x:1028:
+paru:x:1029:
+timjag:x:1030:
+orange:x:1031:
+devops:x:1032:
+apple:x:1033:
+mango:x:1034:
+user1:x:1035:
+user2:x:1036:
+antona:x:1037:
+antonagrp:x:1038:
+alexander:x:1039:
+training:x:1040:
+ladybug:x:1041:
+doggy:x:1042:
+cat:x:1043:
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo groupadd training
+groupadd: group 'training' already exists
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo groupadd dev
+parvathi98@LAPTOP-GIMPBL0O:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,parvathi98
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:parvathi98
+fax:x:21:
+voice:x:22:
+cdrom:x:24:parvathi98
+floppy:x:25:parvathi98
+tape:x:26:
+sudo:x:27:parvathi98,orange
+audio:x:29:parvathi98
+dip:x:30:parvathi98
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:parvathi98
+sasl:x:45:
+plugdev:x:46:parvathi98
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:parvathi98
+lxd:x:118:
+parvathi98:x:1000:
+Amy:x:1001:
+Z:x:1002:
+Diana:x:1003:
+UstTraining:x:1004:
+docker:x:1005:parvathi98
+AlexUser1:x:1006:
+User1Alex:x:1007:
+user1Alex:x:1008:
+use1Alex:x:1009:
+user2Alex:x:1010:
+user3Sam:x:1011:
+user1Sam:x:1012:
+user1Amy:x:1013:
+user2Lora:x:1014:
+user3Phillip:x:1015:
+user4Christo:x:1016:
+ddd:x:1017:
+ccc:x:1018:
+eee:x:1019:
+ttt:x:1020:
+Sam:x:1021:
+mathew:x:1022:
+sam:x:1023:
+alex:x:1024:
+amy:x:1025:
+dora:x:1026:
+alen:x:1027:
+dona:x:1028:
+paru:x:1029:
+timjag:x:1030:
+orange:x:1031:
+devops:x:1032:
+apple:x:1033:
+mango:x:1034:
+user1:x:1035:
+user2:x:1036:
+antona:x:1037:
+antonagrp:x:1038:
+alexander:x:1039:
+training:x:1040:
+ladybug:x:1041:
+doggy:x:1042:
+cat:x:1043:
+dev:x:1044:
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -il
+total 324
+97475 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
+40984 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
+40750 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Alex
+40776 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Amy
+97202 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Dany
+97366 -rwxrwxr--  1 parvathi98 parvathi98  102 Dec 15 17:16 Employee.yml
+97640 drwxr-xr-x  2 parvathi98 parvathi98 4096 Jan  5 16:26 Hashmum
+97477 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 14:07 InitialGalaxy
+97460 -rw-r--r--  1 parvathi98 parvathi98   92 Dec 16 21:04 Play.yml
+40770 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Sam
+40988 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  7 20:32 Thoughts
+40739 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:29 abcIMpex
+40741 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:26 abcImpex
+97480 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 14:48 abcimpex
+97576 -rwxrwxrwx  1 parvathi98 parvathi98    0 Dec 20 15:26 allperms
+97569 -rwxrwxr--  1 parvathi98 parvathi98  102 Dec 20 13:46 args.sh
+97348 -rw-r--r--  1 parvathi98 parvathi98   20 Dec 13 09:43 bashaliases
+97574 drwxrwxr-x  2 parvathi98 devops     4096 Jan 20 11:16 bootcamp
+ 9026 -rw-rw-r--  1 parvathi98 parvathi98   35 Jan 20 11:11 bugfile.txt
+97299 -rw-rw-r--  1 parvathi98 devops        0 Dec 20 14:36 dore
+ 9027 -rw-rw-r--  1 parvathi98 parvathi98   35 Jan 20 11:12 dragonfly.txt
+97339 -rwxrwxr--  1 parvathi98 parvathi98  102 Dec 10 16:02 example.sh
+97355 -rwxrwxr--  1 parvathi98 parvathi98  239 Dec 13 15:14 favfoods.sh
+97458 -rwxrwxr--  1 parvathi98 parvathi98  136 Dec 16 17:44 fibonacci.sh
+40910 -rwxrwxr--  1 parvathi98 parvathi98  166 Jan 20 12:56 file.sh
+97670 -rw-r--r--  1 parvathi98 parvathi98  763 Jan  7 17:02 file.txt
+97353 -rwxrwxr--  1 parvathi98 parvathi98   84 Dec 13 12:56 fileVariable.sh
+97357 -rwxrwxr--  1 parvathi98 parvathi98   85 Dec 13 14:50 filevariables.sh
+97360 -rwxrwxr--  1 parvathi98 parvathi98  105 Dec 13 15:10 frndsinarray.sh
+40912 -rwxrwxr--  1 parvathi98 parvathi98  158 Jan 20 12:59 fruit.sh
+97361 -rwxrwxr--  1 parvathi98 parvathi98  117 Dec 14 08:24 func_demo.sh
+ 1489 -rwxrwxr--  1 parvathi98 parvathi98  212 Jan 20 12:54 helloscript.sh
+97350 --w-------  1 parvathi98 parvathi98    0 Dec 13 10:44 hi
+97349 -rwxr-xr-x  1 parvathi98 parvathi98  435 Dec 13 10:41 hiscript.sh
+97571 -rwxrwxr--  1 parvathi98 parvathi98  222 Dec 20 13:36 ifelse.sh
+97514 drwxrwxr-x  3 parvathi98 parvathi98 4096 Dec 17 15:34 initialgalaxy
+97570 -rwxrwxr--  1 parvathi98 parvathi98  133 Dec 20 12:21 input.sh
+97568 drwxr-xr-x  3 parvathi98 parvathi98 4096 Jan  7 18:08 loon
+40913 -rwxrwxr--  1 parvathi98 parvathi98  114 Jan 20 13:00 loop.sh
+40985 -rwxrwxr--  1 parvathi98 parvathi98  159 Dec 13 12:44 mango.sh
+97577 -r-xrwxr--  1 parvathi98 parvathi98    0 Dec 20 13:31 metafirms
+41004 -rw-r--r--  1 parvathi98 parvathi98   27 Dec  8 17:30 multicontnet.txt
+97356 -rwxrwxr--  1 parvathi98 parvathi98  141 Dec 13 14:47 multiplesof5.sh
+40998 -rwxr-xr-x  1 parvathi98 parvathi98   98 Dec 10 17:21 mycommands.sh
+40989 -rw-r--r--  1 parvathi98 parvathi98   24 Dec  9 08:25 mycontnet.txt
+97344 -rwxr-xr-x  1 parvathi98 parvathi98  143 Dec 10 13:13 myfileswithvar.sh
+97343 -rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 13:10 myfileswithvari.sh
+97054 -rwxr-xr-x  1 parvathi98 parvathi98  196 Dec 10 12:58 myfilewithvar.sh
+97301 -rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 13:01 myfilewithvariables.sh
+97053 -rw-r--r--  1 parvathi98 parvathi98  163 Dec 10 12:43 myfilewithvars.sh
+40986 -rw-r--rwx  1 parvathi98 parvathi98  122 Dec 10 10:13 myinfo.txt
+96591 -rw-r--r--  1 parvathi98 parvathi98   16 Jan 20 20:29 mytext.txt
+96791 -rw-r--r--  1 parvathi98 parvathi98   38 Jan 20 20:30 mytext1.txt
+40994 -rw-r--r--  1 parvathi98 parvathi98  134 Dec  8 08:09 newcreate
+96793 -rw-r--r--  1 parvathi98 parvathi98  542 Jan 20 20:39 newtext
+97351 -rwxrwxr--  1 parvathi98 parvathi98  120 Dec 13 14:33 odd_or_even.sh
+97359 -rw-r--r--  1 parvathi98 parvathi98    1 Dec 13 14:37 oddnumber.sh
+97358 -rwxrwxr--  1 parvathi98 parvathi98  145 Dec 13 15:12 oddnumbers.sh
+  760 -rw-r--r--  1 parvathi98 parvathi98  932 Jan 20 20:29 outputfile.txt
+40761 drwxr-xr-x  3 parvathi98 parvathi98 4096 Dec  1 20:07 parentfldr1
+97668 drwxr-xr-x  3 parvathi98 parvathi98 4096 Jan  7 17:00 parentfolder
+ 2399 drwxrwxr-x 10 parvathi98 parvathi98 4096 Jan 20 12:25 parrole
+41023 -rw-r--r--  1 parvathi98 parvathi98   89 Dec 16 12:13 paru_orchestrate.yml
+40987 drwxr-xr-x  4 parvathi98 parvathi98 4096 Dec 16 13:01 paru_playbook
+97368 drwxr-xr-x 11 parvathi98 parvathi98 4096 Jan  7 19:55 parurole
+40909 drwxr-xr-x  4 parvathi98 parvathi98 4096 Jan  8 12:31 parvathi_playbook
+  831 drwxrwxr-x  4 parvathi98 parvathi98 4096 Jan 20 12:33 playbook
+97459 -rwxrwxr--  1 parvathi98 parvathi98  162 Dec 16 17:49 prime.sh
+97345 -rwxr-xr-x  1 parvathi98 parvathi98   92 Jan 20 12:47 reading.sh
+97362 -rwxrwxr--  1 parvathi98 parvathi98   87 Dec 13 17:39 sayhi
+96581 -rwxrwxr-x  1 parvathi98 parvathi98  134 Jan 20 12:45 script.sh
+97352 -rwxrwxr--  1 parvathi98 parvathi98  164 Dec 13 14:35 scriptfilevar.sh
+ 3733 -rwxr-xr-x  1 parvathi98 parvathi98  127 Jan  7 20:46 shellfile
+ 3736 -rwxr-xr-x  1 parvathi98 parvathi98  126 Jan  7 20:47 shellfile.sh
+41006 -rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 12:04 shellscripting
+40911 -rwxrwxr--  1 parvathi98 parvathi98  162 Jan 20 12:57 shellvar.sh
+97461 -rw-r--r--  1 parvathi98 parvathi98   96 Dec 16 21:08 smil.yml
+ 2766 drwxr-xr-x 10 parvathi98 parvathi98 4096 Jan  7 20:06 start-tomcat
+97364 -rwxrwxr--  1 parvathi98 parvathi98   63 Dec 13 17:48 sum.sh
+40995 drwxr-xr-x  4 parvathi98 parvathi98 4096 Jan 20 11:23 temp
+40732 drwxr-xr-x  4 parvathi98 parvathi98 4096 Dec  1 17:36 tempy
+40743 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  2 16:31 tempy.txt
+96792 -rw-r--r--  1 parvathi98 parvathi98  542 Jan 20 20:36 textnew
+40992 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  7 15:05 thoughts.txt
+40747 -rwxr-xr-x  1 parvathi98 parvathi98   84 Dec  2 17:56 world
+97363 -rwxrwxr--  1 parvathi98 parvathi98  135 Dec 13 17:43 world.sh
+40760 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  1 20:06 xyz
+97341 drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 28 16:44 zing
+parvathi98@LAPTOP-GIMPBL0O:~$ file temp
+temp: directory
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                mytext1.txt           parvathi_playbook  sum.sh
+AbcImpex       allperms       filevariables.sh  metafirms               newcreate             playbook           temp
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        newtext               prime.sh           tempy
+Amy            bashaliases    fruit.sh          multiplesof5.sh         odd_or_even.sh        reading.sh         tempy.txt
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumber.sh          sayhi              textnew
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           oddnumbers.sh         script.sh          thoughts.txt
+Hashmum        dore           hi                myfileswithvar.sh       outputfile.txt        scriptfilevar.sh   world
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfldr1           shellfile          world.sh
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parentfolder          shellfile.sh       xyz
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  parrole               shellscripting     zing
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_orchestrate.yml  shellvar.sh
+abcIMpex       file.sh        loon              myinfo.txt              paru_playbook         smil.yml
+abcImpex       file.txt       loop.sh           mytext.txt              parurole              start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~$ file mytext1.txt
+mytext1.txt: ASCII text
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -a
+.                          .sudo_as_admin_successful  bashaliases       ifelse.sh               mytext1.txt           script.sh
+..                         .viminfo                   bootcamp          initialgalaxy           newcreate             scriptfilevar.sh
+.ansible                   ABCImpex                   bugfile.txt       input.sh                newtext               shellfile
+.aws                       AbcImpex                   dore              loon                    odd_or_even.sh        shellfile.sh
+.azure                     Alex                       dragonfly.txt     loop.sh                 oddnumber.sh          shellscripting
+.bash_aliases              Amy                        example.sh        mango.sh                oddnumbers.sh         shellvar.sh
+.bash_history              Dany                       favfoods.sh       metafirms               outputfile.txt        smil.yml
+.bash_logout               Employee.yml               fibonacci.sh      multicontnet.txt        parentfldr1           start-tomcat
+.bashrc                    Hashmum                    file.sh           multiplesof5.sh         parentfolder          sum.sh
+.config                    InitialGalaxy              file.txt          mycommands.sh           parrole               temp
+.docker                    Play.yml                   fileVariable.sh   mycontnet.txt           paru_orchestrate.yml  tempy
+.kube                      Sam                        filevariables.sh  myfileswithvar.sh       paru_playbook         tempy.txt
+.landscape                 Thoughts                   frndsinarray.sh   myfileswithvari.sh      parurole              textnew
+.local                     abcIMpex                   fruit.sh          myfilewithvar.sh        parvathi_playbook     thoughts.txt
+.motd_shown                abcImpex                   func_demo.sh      myfilewithvariables.sh  playbook              world
+.profile                   abcimpex                   helloscript.sh    myfilewithvars.sh       prime.sh              world.sh
+.python_history            allperms                   hi                myinfo.txt              reading.sh            xyz
+.python_history-00207.tmp  args.sh                    hiscript.sh       mytext.txt              sayhi                 zing
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -l
+total 324
+drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
+drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Alex
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Amy
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Dany
+-rwxrwxr--  1 parvathi98 parvathi98  102 Dec 15 17:16 Employee.yml
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Jan  5 16:26 Hashmum
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 14:07 InitialGalaxy
+-rw-r--r--  1 parvathi98 parvathi98   92 Dec 16 21:04 Play.yml
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Sam
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  7 20:32 Thoughts
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:29 abcIMpex
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:26 abcImpex
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 14:48 abcimpex
+-rwxrwxrwx  1 parvathi98 parvathi98    0 Dec 20 15:26 allperms
+-rwxrwxr--  1 parvathi98 parvathi98  102 Dec 20 13:46 args.sh
+-rw-r--r--  1 parvathi98 parvathi98   20 Dec 13 09:43 bashaliases
+drwxrwxr-x  2 parvathi98 devops     4096 Jan 20 11:16 bootcamp
+-rw-rw-r--  1 parvathi98 parvathi98   35 Jan 20 11:11 bugfile.txt
+-rw-rw-r--  1 parvathi98 devops        0 Dec 20 14:36 dore
+-rw-rw-r--  1 parvathi98 parvathi98   35 Jan 20 11:12 dragonfly.txt
+-rwxrwxr--  1 parvathi98 parvathi98  102 Dec 10 16:02 example.sh
+-rwxrwxr--  1 parvathi98 parvathi98  239 Dec 13 15:14 favfoods.sh
+-rwxrwxr--  1 parvathi98 parvathi98  136 Dec 16 17:44 fibonacci.sh
+-rwxrwxr--  1 parvathi98 parvathi98  166 Jan 20 12:56 file.sh
+-rw-r--r--  1 parvathi98 parvathi98  763 Jan  7 17:02 file.txt
+-rwxrwxr--  1 parvathi98 parvathi98   84 Dec 13 12:56 fileVariable.sh
+-rwxrwxr--  1 parvathi98 parvathi98   85 Dec 13 14:50 filevariables.sh
+-rwxrwxr--  1 parvathi98 parvathi98  105 Dec 13 15:10 frndsinarray.sh
+-rwxrwxr--  1 parvathi98 parvathi98  158 Jan 20 12:59 fruit.sh
+-rwxrwxr--  1 parvathi98 parvathi98  117 Dec 14 08:24 func_demo.sh
+-rwxrwxr--  1 parvathi98 parvathi98  212 Jan 20 12:54 helloscript.sh
+--w-------  1 parvathi98 parvathi98    0 Dec 13 10:44 hi
+-rwxr-xr-x  1 parvathi98 parvathi98  435 Dec 13 10:41 hiscript.sh
+-rwxrwxr--  1 parvathi98 parvathi98  222 Dec 20 13:36 ifelse.sh
+drwxrwxr-x  3 parvathi98 parvathi98 4096 Dec 17 15:34 initialgalaxy
+-rwxrwxr--  1 parvathi98 parvathi98  133 Dec 20 12:21 input.sh
+drwxr-xr-x  3 parvathi98 parvathi98 4096 Jan  7 18:08 loon
+-rwxrwxr--  1 parvathi98 parvathi98  114 Jan 20 13:00 loop.sh
+-rwxrwxr--  1 parvathi98 parvathi98  159 Dec 13 12:44 mango.sh
+-r-xrwxr--  1 parvathi98 parvathi98    0 Dec 20 13:31 metafirms
+-rw-r--r--  1 parvathi98 parvathi98   27 Dec  8 17:30 multicontnet.txt
+-rwxrwxr--  1 parvathi98 parvathi98  141 Dec 13 14:47 multiplesof5.sh
+-rwxr-xr-x  1 parvathi98 parvathi98   98 Dec 10 17:21 mycommands.sh
+-rw-r--r--  1 parvathi98 parvathi98   24 Dec  9 08:25 mycontnet.txt
+-rwxr-xr-x  1 parvathi98 parvathi98  143 Dec 10 13:13 myfileswithvar.sh
+-rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 13:10 myfileswithvari.sh
+-rwxr-xr-x  1 parvathi98 parvathi98  196 Dec 10 12:58 myfilewithvar.sh
+-rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 13:01 myfilewithvariables.sh
+-rw-r--r--  1 parvathi98 parvathi98  163 Dec 10 12:43 myfilewithvars.sh
+-rw-r--rwx  1 parvathi98 parvathi98  122 Dec 10 10:13 myinfo.txt
+-rw-r--r--  1 parvathi98 parvathi98   16 Jan 20 20:29 mytext.txt
+-rw-r--r--  1 parvathi98 parvathi98   38 Jan 20 20:30 mytext1.txt
+-rw-r--r--  1 parvathi98 parvathi98  134 Dec  8 08:09 newcreate
+-rw-r--r--  1 parvathi98 parvathi98  542 Jan 20 20:39 newtext
+-rwxrwxr--  1 parvathi98 parvathi98  120 Dec 13 14:33 odd_or_even.sh
+-rw-r--r--  1 parvathi98 parvathi98    1 Dec 13 14:37 oddnumber.sh
+-rwxrwxr--  1 parvathi98 parvathi98  145 Dec 13 15:12 oddnumbers.sh
+-rw-r--r--  1 parvathi98 parvathi98  932 Jan 20 20:29 outputfile.txt
+drwxr-xr-x  3 parvathi98 parvathi98 4096 Dec  1 20:07 parentfldr1
+drwxr-xr-x  3 parvathi98 parvathi98 4096 Jan  7 17:00 parentfolder
+drwxrwxr-x 10 parvathi98 parvathi98 4096 Jan 20 12:25 parrole
+-rw-r--r--  1 parvathi98 parvathi98   89 Dec 16 12:13 paru_orchestrate.yml
+drwxr-xr-x  4 parvathi98 parvathi98 4096 Dec 16 13:01 paru_playbook
+drwxr-xr-x 11 parvathi98 parvathi98 4096 Jan  7 19:55 parurole
+drwxr-xr-x  4 parvathi98 parvathi98 4096 Jan  8 12:31 parvathi_playbook
+drwxrwxr-x  4 parvathi98 parvathi98 4096 Jan 20 12:33 playbook
+-rwxrwxr--  1 parvathi98 parvathi98  162 Dec 16 17:49 prime.sh
+-rwxr-xr-x  1 parvathi98 parvathi98   92 Jan 20 12:47 reading.sh
+-rwxrwxr--  1 parvathi98 parvathi98   87 Dec 13 17:39 sayhi
+-rwxrwxr-x  1 parvathi98 parvathi98  134 Jan 20 12:45 script.sh
+-rwxrwxr--  1 parvathi98 parvathi98  164 Dec 13 14:35 scriptfilevar.sh
+-rwxr-xr-x  1 parvathi98 parvathi98  127 Jan  7 20:46 shellfile
+-rwxr-xr-x  1 parvathi98 parvathi98  126 Jan  7 20:47 shellfile.sh
+-rw-r--r--  1 parvathi98 parvathi98    0 Dec 10 12:04 shellscripting
+-rwxrwxr--  1 parvathi98 parvathi98  162 Jan 20 12:57 shellvar.sh
+-rw-r--r--  1 parvathi98 parvathi98   96 Dec 16 21:08 smil.yml
+drwxr-xr-x 10 parvathi98 parvathi98 4096 Jan  7 20:06 start-tomcat
+-rwxrwxr--  1 parvathi98 parvathi98   63 Dec 13 17:48 sum.sh
+drwxr-xr-x  4 parvathi98 parvathi98 4096 Jan 20 11:23 temp
+drwxr-xr-x  4 parvathi98 parvathi98 4096 Dec  1 17:36 tempy
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  2 16:31 tempy.txt
+-rw-r--r--  1 parvathi98 parvathi98  542 Jan 20 20:36 textnew
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  7 15:05 thoughts.txt
+-rwxr-xr-x  1 parvathi98 parvathi98   84 Dec  2 17:56 world
+-rwxrwxr--  1 parvathi98 parvathi98  135 Dec 13 17:43 world.sh
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec  1 20:06 xyz
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 28 16:44 zing
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -alh | grep temp
+drwxr-xr-x  4 parvathi98 parvathi98 4.0K Jan 20 11:23 temp
+drwxr-xr-x  4 parvathi98 parvathi98 4.0K Dec  1 17:36 tempy
+drwxr-xr-x  2 parvathi98 parvathi98 4.0K Dec  2 16:31 tempy.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ touch editfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ nano editfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod +x editfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ cat editfile.txt
+filename=editfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ rm -- editfile.txt
+parvathi98@LAPTOP-GIMPBL0O:~$ find . -.txt
+find: unknown predicate `-.txt'
+parvathi98@LAPTOP-GIMPBL0O:~$ find . -name .txt
+parvathi98@LAPTOP-GIMPBL0O:~$ find . -name temp
+./temp
+parvathi98@LAPTOP-GIMPBL0O:~$ find . -type d -name "t*"
+./temp
+./.ansible/tmp
+./start-tomcat/tasks
+./start-tomcat/tests
+./start-tomcat/templates
+./tempy
+./parrole/tasks
+./parrole/tests
+./parrole/templates
+./parvathi_playbook/start-tomcat/tasks
+./parvathi_playbook/start-tomcat/tests
+./parvathi_playbook/start-tomcat/templates
+./parvathi_playbook/install-tomcat/tasks
+./parvathi_playbook/install-tomcat/tests
+./parvathi_playbook/install-tomcat/templates
+./tempy.txt
+./playbook/start-tomcat/tasks
+./playbook/start-tomcat/tests
+./playbook/start-tomcat/templates
+./playbook/install-tomcat/tasks
+./playbook/install-tomcat/tests
+./playbook/install-tomcat/templates
+./thoughts.txt
+./paru_playbook/start-tomcat/tasks
+./paru_playbook/start-tomcat/tests
+./paru_playbook/start-tomcat/templates
+./paru_playbook/install-tomcat/tasks
+./paru_playbook/install-tomcat/tests
+./paru_playbook/install-tomcat/templates
+./parurole/tasks
+./parurole/tests
+./parurole/templates
+./parurole/start-tomcat/tasks
+./parurole/start-tomcat/tests
+./parurole/start-tomcat/templates
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                mytext1.txt           parvathi_playbook  sum.sh
+AbcImpex       allperms       filevariables.sh  metafirms               newcreate             playbook           temp
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        newtext               prime.sh           tempy
+Amy            bashaliases    fruit.sh          multiplesof5.sh         odd_or_even.sh        reading.sh         tempy.txt
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumber.sh          sayhi              textnew
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           oddnumbers.sh         script.sh          thoughts.txt
+Hashmum        dore           hi                myfileswithvar.sh       outputfile.txt        scriptfilevar.sh   world
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfldr1           shellfile          world.sh
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parentfolder          shellfile.sh       xyz
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  parrole               shellscripting     zing
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_orchestrate.yml  shellvar.sh
+abcIMpex       file.sh        loon              myinfo.txt              paru_playbook         smil.yml
+abcImpex       file.txt       loop.sh           mytext.txt              parurole              start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~$ find . -name myinfo.txt -delete
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                newcreate             playbook          temp
+AbcImpex       allperms       filevariables.sh  metafirms               newtext               prime.sh          tempy
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        odd_or_even.sh        reading.sh        tempy.txt
+Amy            bashaliases    fruit.sh          multiplesof5.sh         oddnumber.sh          sayhi             textnew
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumbers.sh         script.sh         thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           outputfile.txt        scriptfilevar.sh  world
+Hashmum        dore           hi                myfileswithvar.sh       parentfldr1           shellfile         world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfolder          shellfile.sh      xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parrole               shellscripting    zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  paru_orchestrate.yml  shellvar.sh
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_playbook         smil.yml
+abcIMpex       file.sh        loon              mytext.txt              parurole              start-tomcat
+abcImpex       file.txt       loop.sh           mytext1.txt             parvathi_playbook     sum.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3083892       59948     2960728          72       63216     2912756
+Swap:       1048576           0     1048576
+parvathi98@LAPTOP-GIMPBL0O:~$ uptime
+ 20:53:58 up 51 min,  0 users,  load average: 0.00, 0.00, 0.00
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo apt install nmap
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Suggested packages:
+  ncat ndiff zenmap
+The following NEW packages will be installed:
+  nmap
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1662 kB of archives.
+After this operation, 4499 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 nmap amd64 7.80+dfsg1-2build1 [1662 kB]
+Fetched 1662 kB in 3s (565 kB/s)
+Selecting previously unselected package nmap.
+(Reading database ... 77898 files and directories currently installed.)
+Preparing to unpack .../nmap_7.80+dfsg1-2build1_amd64.deb ...
+Unpacking nmap (7.80+dfsg1-2build1) ...
+Setting up nmap (7.80+dfsg1-2build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo apt remove nmap
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nmap
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 4499 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 77927 files and directories currently installed.)
+Removing nmap (7.80+dfsg1-2build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo apt update
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1509 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [893 kB]
+Fetched 2738 kB in 3s (826 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+All packages are up to date.
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+parvathi98@LAPTOP-GIMPBL0O:~$ pmap
+
+Usage:
+ pmap [options] PID [PID ...]
+
+Options:
+ -x, --extended              show details
+ -X                          show even more details
+            WARNING: format changes according to /proc/PID/smaps
+ -XX                         show everything the kernel provides
+ -c, --read-rc               read the default rc
+ -C, --read-rc-from=<file>   read the rc from file
+ -n, --create-rc             create new default rc
+ -N, --create-rc-to=<file>   create new rc to file
+            NOTE: pid arguments are not allowed with -n, -N
+ -d, --device                show the device format
+ -q, --quiet                 do not display header and footer
+ -p, --show-path             show path in the mapping
+ -A, --range=<low>[,<high>]  limit results to the given range
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pmap(1).
+parvathi98@LAPTOP-GIMPBL0O:~$ top
+top - 20:56:14 up 53 min,  0 users,  load average: 0.06, 0.03, 0.01
+Tasks:   5 total,   1 running,   4 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3011.6 total,   2604.2 free,     62.7 used,    344.7 buff/cache
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2803.5 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0     900    524    464 S   0.0   0.0   0:00.05 init
+   10 root      20   0     900     80     20 S   0.0   0.0   0:00.00 init
+   11 root      20   0     900     80     20 S   0.0   0.0   0:00.43 init
+   12 parvath+  20   0   10168   5084   3312 S   0.0   0.2   0:00.36 bash
+  824 parvath+  20   0   10880   3832   3316 R   0.0   0.1   0:00.00 top
+
+
+
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$ htop
+parvathi98@LAPTOP-GIMPBL0O:~$
+parvathi98@LAPTOP-GIMPBL0O:~$ last
+
+wtmp begins Tue Nov 30 22:21:52 2021
+parvathi98@LAPTOP-GIMPBL0O:~$ ps
+  PID TTY          TIME CMD
+   12 pts/0    00:00:00 bash
+  827 pts/0    00:00:00 ps
+parvathi98@LAPTOP-GIMPBL0O:~$ info
+parvathi98@LAPTOP-GIMPBL0O:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=LAPTOP-GIMPBL0O
+PWD=/home/parvathi98
+LOGNAME=parvathi98
+HOME=/home/parvathi98
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/11_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=parvathi98
+SHLVL=1
+WSLENV=
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/PARVATHI AJITH/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/PARVATHI AJITH/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PARVATHI AJITH/AppData/Local/GitHubDesktop/bin:/snap/bin
+HOSTTYPE=x86_64
+OLDPWD=/
+_=/usr/bin/env
+parvathi98@LAPTOP-GIMPBL0O:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/sdb       263174212  1982868 247753188   1% /
+tmpfs            1541944        0   1541944   0% /mnt/wsl
+tools          123866108 86685244  37180864  70% /init
+none             1539896        0   1539896   0% /dev
+none             1541944        8   1541936   1% /run
+none             1541944        0   1541944   0% /run/lock
+none             1541944        0   1541944   0% /run/shm
+none             1541944        0   1541944   0% /run/user
+tmpfs            1541944        0   1541944   0% /sys/fs/cgroup
+drivers        123866108 86685244  37180864  70% /usr/lib/wsl/drivers
+lib            123866108 86685244  37180864  70% /usr/lib/wsl/lib
+C:\            123866108 86685244  37180864  70% /mnt/c
+D:\            383998972 11825944 372173028   4% /mnt/d
+E:\            383999996   226912 383773084   1% /mnt/e
+F:\            207593468 61050244 146543224  30% /mnt/f
+
+
+PYTHON
+
+parvathi98@LAPTOP-GIMPBL0O:~$ python3
+Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hello"
+'hello'
+>>> 45+56
+101
+>>> 56-89
+-33
+>>> if(no<10)
+  File "<stdin>", line 1
+    if(no<10)
+            ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> if(no<10)
+  File "<stdin>", line 1
+    if(no<10)
+            ^
+SyntaxError: invalid syntax
+>>> if(no<10):
+...     print('single digit no'+str(no))
+... else:
+...     print("multidigit no"+str(no))
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'no' is not defined
+>>> no=9
+>>> if(no<10):
+...     print('single digit no'+str(no))
+... else:
+...     print('multidigit no'+str(no))
+...
+single digit no9
+>>>
+>>> friends=['Sam','Vineetha','Dona']
+>>> friend[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'friend' is not defined
+>>> friends[2]
+'Dona'
+>>> from math import*
+>>> a=pi
+>>> print(a)
+3.141592653589793
+>>> print(pow(2,3))
+8.0
+>>>
+>>> class student:
+...     def setstudent(self,name,course):
+...             self.name=name
+...             self.course=course
+...     def getstudent(self):
+...             print(self.name," ",self.course)
+...
+>>> std=student()
+>>> std.setstudent("Parvathi","Python")
+>>> std.getstudent()
+Parvathi   Python
+>>>
+>>>
+>>> exit()
+
+
+SHELL SCRIPTING
+
+parvathi98@LAPTOP-GIMPBL0O:~$ nano file.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 file.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./file.sh
+Welcome to shellscripting
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                newcreate             playbook          temp
+AbcImpex       allperms       filevariables.sh  metafirms               newtext               prime.sh          tempy
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        odd_or_even.sh        reading.sh        tempy.txt
+Amy            bashaliases    fruit.sh          multiplesof5.sh         oddnumber.sh          sayhi             textnew
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumbers.sh         script.sh         thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           outputfile.txt        scriptfilevar.sh  world
+Hashmum        dore           hi                myfileswithvar.sh       parentfldr1           shellfile         world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfolder          shellfile.sh      xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parrole               shellscripting    zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  paru_orchestrate.yml  shellvar.sh
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_playbook         smil.yml
+abcIMpex       file.sh        loon              mytext.txt              parurole              start-tomcat
+abcImpex       file.txt       loop.sh           mytext1.txt             parvathi_playbook     sum.sh
+Shell scripting is used to execute commands after storing
+A shell script has executable linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ nano reading.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 reading.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./reading.sh
+what is your name?:
+parvathi
+where do you come from?:
+India
+parvathi98@LAPTOP-GIMPBL0O:~$ nano helloscript.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 helloscript.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./helloscript.sh
+The script title is ./helloscript.sh
+The first argument is
+The second argument is
+The thrid argument is
+/$ 841 is the PID of the script
+/# the total number of parameters 0
+parvathi98@LAPTOP-GIMPBL0O:~$ ./helloscript.sh 23 45 7 89
+The script title is ./helloscript.sh
+The first argument is 23
+The second argument is 45
+The thrid argument is 7
+/$ 842 is the PID of the script
+/# the total number of parameters 4
+parvathi98@LAPTOP-GIMPBL0O:~$ nano file.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 file.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./file.sh
+Welcome to shellscripting
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                newcreate             playbook          temp
+AbcImpex       allperms       filevariables.sh  metafirms               newtext               prime.sh          tempy
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        odd_or_even.sh        reading.sh        tempy.txt
+Amy            bashaliases    fruit.sh          multiplesof5.sh         oddnumber.sh          sayhi             textnew
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumbers.sh         script.sh         thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           outputfile.txt        scriptfilevar.sh  world
+Hashmum        dore           hi                myfileswithvar.sh       parentfldr1           shellfile         world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfolder          shellfile.sh      xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parrole               shellscripting    zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  paru_orchestrate.yml  shellvar.sh
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_playbook         smil.yml
+abcIMpex       file.sh        loon              mytext.txt              parurole              start-tomcat
+abcImpex       file.txt       loop.sh           mytext1.txt             parvathi_playbook     sum.sh
+Shell scripting is used to execute commands after storing
+A shell script has executable linux commands
+parvathi98@LAPTOP-GIMPBL0O:~$ nano shellvar.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 shellvar.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./shellvar.sh
+working with varibles in a script file
+learning shell scripting Devops training 6789
+parvathi98@LAPTOP-GIMPBL0O:~$ nano .bash_aliases
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 .bash_aliases
+parvathi98@LAPTOP-GIMPBL0O:~$ ll
+total 412
+drwxr-xr-x 37 parvathi98 parvathi98  4096 Jan 20 21:23 ./
+drwxr-xr-x 19 root       root        4096 Jan 20 20:44 ../
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Dec 15 17:30 .ansible/
+lrwxrwxrwx  1 parvathi98 parvathi98    32 Dec  3 12:45 .aws -> '/mnt/c/Users/PARVATHI AJITH/.aws'/
+lrwxrwxrwx  1 parvathi98 parvathi98    34 Dec  3 12:45 .azure -> '/mnt/c/Users/PARVATHI AJITH/.azure'/
+-rwxrwxr--  1 parvathi98 parvathi98    70 Jan 20 21:23 .bash_aliases*
+-rw-------  1 parvathi98 parvathi98 25268 Jan 19 22:56 .bash_history
+-rw-r--r--  1 parvathi98 parvathi98   220 Nov 30 22:23 .bash_logout
+-rw-r--r--  1 parvathi98 parvathi98  3771 Nov 30 22:23 .bashrc
+drwx------  4 parvathi98 parvathi98  4096 Dec  8 16:18 .config/
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Dec  3 12:45 .docker/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Jan  6 16:57 .kube/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Nov 30 22:24 .landscape/
+drwxr-xr-x  3 parvathi98 parvathi98  4096 Dec  2 17:44 .local/
+-rw-r--r--  1 parvathi98 parvathi98     0 Jan 20 10:08 .motd_shown
+-rw-r--r--  1 parvathi98 parvathi98   807 Nov 30 22:23 .profile
+-rw-------  1 parvathi98 parvathi98  5050 Jan 20 21:16 .python_history
+-rw-------  1 parvathi98 parvathi98     0 Dec 15 10:32 .python_history-00207.tmp
+-rw-r--r--  1 parvathi98 parvathi98     0 Dec  2 11:30 .sudo_as_admin_successful
+-rw-------  1 parvathi98 parvathi98   818 Dec 10 13:09 .viminfo
+drwxr-xr-x  6 parvathi98 parvathi98  4096 Dec 17 13:44 ABCImpex/
+drwxr-xr-x  6 parvathi98 parvathi98  4096 Dec 17 12:25 AbcImpex/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:42 Alex/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:42 Amy/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:42 Dany/
+-rwxrwxr--  1 parvathi98 parvathi98   102 Dec 15 17:16 Employee.yml*
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Jan  5 16:26 Hashmum/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 14:07 InitialGalaxy/
+-rw-r--r--  1 parvathi98 parvathi98    92 Dec 16 21:04 Play.yml
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:42 Sam/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec  7 20:32 Thoughts/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:29 abcIMpex/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 13:26 abcImpex/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 17 14:48 abcimpex/
+-rwxrwxrwx  1 parvathi98 parvathi98     0 Dec 20 15:26 allperms*
+-rwxrwxr--  1 parvathi98 parvathi98   102 Dec 20 13:46 args.sh*
+-rw-r--r--  1 parvathi98 parvathi98    20 Dec 13 09:43 bashaliases
+drwxrwxr-x  2 parvathi98 devops      4096 Jan 20 11:16 bootcamp/
+-rw-rw-r--  1 parvathi98 parvathi98    35 Jan 20 11:11 bugfile.txt
+-rw-rw-r--  1 parvathi98 devops         0 Dec 20 14:36 dore
+-rw-rw-r--  1 parvathi98 parvathi98    35 Jan 20 11:12 dragonfly.txt
+-rwxrwxr--  1 parvathi98 parvathi98   102 Dec 10 16:02 example.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   239 Dec 13 15:14 favfoods.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   136 Dec 16 17:44 fibonacci.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   166 Jan 20 21:22 file.sh*
+-rw-r--r--  1 parvathi98 parvathi98   763 Jan  7 17:02 file.txt
+-rwxrwxr--  1 parvathi98 parvathi98    84 Dec 13 12:56 fileVariable.sh*
+-rwxrwxr--  1 parvathi98 parvathi98    85 Dec 13 14:50 filevariables.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   105 Dec 13 15:10 frndsinarray.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   158 Jan 20 12:59 fruit.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   117 Dec 14 08:24 func_demo.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   212 Jan 20 21:20 helloscript.sh*
+--w-------  1 parvathi98 parvathi98     0 Dec 13 10:44 hi
+-rwxr-xr-x  1 parvathi98 parvathi98   435 Dec 13 10:41 hiscript.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   222 Dec 20 13:36 ifelse.sh*
+drwxrwxr-x  3 parvathi98 parvathi98  4096 Dec 17 15:34 initialgalaxy/
+-rwxrwxr--  1 parvathi98 parvathi98   133 Dec 20 12:21 input.sh*
+drwxr-xr-x  3 parvathi98 parvathi98  4096 Jan  7 18:08 loon/
+-rwxrwxr--  1 parvathi98 parvathi98   114 Jan 20 13:00 loop.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   159 Dec 13 12:44 mango.sh*
+-r-xrwxr--  1 parvathi98 parvathi98     0 Dec 20 13:31 metafirms*
+-rw-r--r--  1 parvathi98 parvathi98    27 Dec  8 17:30 multicontnet.txt
+-rwxrwxr--  1 parvathi98 parvathi98   141 Dec 13 14:47 multiplesof5.sh*
+-rwxr-xr-x  1 parvathi98 parvathi98    98 Dec 10 17:21 mycommands.sh*
+-rw-r--r--  1 parvathi98 parvathi98    24 Dec  9 08:25 mycontnet.txt
+-rwxr-xr-x  1 parvathi98 parvathi98   143 Dec 10 13:13 myfileswithvar.sh*
+-rw-r--r--  1 parvathi98 parvathi98     0 Dec 10 13:10 myfileswithvari.sh
+-rwxr-xr-x  1 parvathi98 parvathi98   196 Dec 10 12:58 myfilewithvar.sh*
+-rw-r--r--  1 parvathi98 parvathi98     0 Dec 10 13:01 myfilewithvariables.sh
+-rw-r--r--  1 parvathi98 parvathi98   163 Dec 10 12:43 myfilewithvars.sh
+-rw-r--r--  1 parvathi98 parvathi98    16 Jan 20 20:29 mytext.txt
+-rw-r--r--  1 parvathi98 parvathi98    38 Jan 20 20:30 mytext1.txt
+-rw-r--r--  1 parvathi98 parvathi98   134 Dec  8 08:09 newcreate
+-rw-r--r--  1 parvathi98 parvathi98   542 Jan 20 20:39 newtext
+-rwxrwxr--  1 parvathi98 parvathi98   120 Dec 13 14:33 odd_or_even.sh*
+-rw-r--r--  1 parvathi98 parvathi98     1 Dec 13 14:37 oddnumber.sh
+-rwxrwxr--  1 parvathi98 parvathi98   145 Dec 13 15:12 oddnumbers.sh*
+-rw-r--r--  1 parvathi98 parvathi98   932 Jan 20 20:29 outputfile.txt
+drwxr-xr-x  3 parvathi98 parvathi98  4096 Dec  1 20:07 parentfldr1/
+drwxr-xr-x  3 parvathi98 parvathi98  4096 Jan  7 17:00 parentfolder/
+drwxrwxr-x 10 parvathi98 parvathi98  4096 Jan 20 12:25 parrole/
+-rw-r--r--  1 parvathi98 parvathi98    89 Dec 16 12:13 paru_orchestrate.yml
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Dec 16 13:01 paru_playbook/
+drwxr-xr-x 11 parvathi98 parvathi98  4096 Jan  7 19:55 parurole/
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Jan  8 12:31 parvathi_playbook/
+drwxrwxr-x  4 parvathi98 parvathi98  4096 Jan 20 12:33 playbook/
+-rwxrwxr--  1 parvathi98 parvathi98   162 Dec 16 17:49 prime.sh*
+-rwxrwxr--  1 parvathi98 parvathi98    92 Jan 20 21:19 reading.sh*
+-rwxrwxr--  1 parvathi98 parvathi98    87 Dec 13 17:39 sayhi*
+-rwxrwxr-x  1 parvathi98 parvathi98   134 Jan 20 12:45 script.sh*
+-rwxrwxr--  1 parvathi98 parvathi98   164 Dec 13 14:35 scriptfilevar.sh*
+-rwxr-xr-x  1 parvathi98 parvathi98   127 Jan  7 20:46 shellfile*
+-rwxr-xr-x  1 parvathi98 parvathi98   126 Jan  7 20:47 shellfile.sh*
+-rw-r--r--  1 parvathi98 parvathi98     0 Dec 10 12:04 shellscripting
+-rwxrwxr--  1 parvathi98 parvathi98   162 Jan 20 21:22 shellvar.sh*
+-rw-r--r--  1 parvathi98 parvathi98    96 Dec 16 21:08 smil.yml
+drwxr-xr-x 10 parvathi98 parvathi98  4096 Jan  7 20:06 start-tomcat/
+-rwxrwxr--  1 parvathi98 parvathi98    63 Dec 13 17:48 sum.sh*
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Jan 20 11:23 temp/
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Dec  1 17:36 tempy/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec  2 16:31 tempy.txt/
+-rw-r--r--  1 parvathi98 parvathi98   542 Jan 20 20:36 textnew
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec  7 15:05 thoughts.txt/
+-rwxr-xr-x  1 parvathi98 parvathi98    84 Dec  2 17:56 world*
+-rwxrwxr--  1 parvathi98 parvathi98   135 Dec 13 17:43 world.sh*
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec  1 20:06 xyz/
+drwxr-xr-x  2 parvathi98 parvathi98  4096 Dec 28 16:44 zing/
+parvathi98@LAPTOP-GIMPBL0O:~$ la
+.ansible                   ABCImpex       bugfile.txt       input.sh                odd_or_even.sh        shellfile.sh
+.aws                       AbcImpex       dore              loon                    oddnumber.sh          shellscripting
+.azure                     Alex           dragonfly.txt     loop.sh                 oddnumbers.sh         shellvar.sh
+.bash_aliases              Amy            example.sh        mango.sh                outputfile.txt        smil.yml
+.bash_history              Dany           favfoods.sh       metafirms               parentfldr1           start-tomcat
+.bash_logout               Employee.yml   fibonacci.sh      multicontnet.txt        parentfolder          sum.sh
+.bashrc                    Hashmum        file.sh           multiplesof5.sh         parrole               temp
+.config                    InitialGalaxy  file.txt          mycommands.sh           paru_orchestrate.yml  tempy
+.docker                    Play.yml       fileVariable.sh   mycontnet.txt           paru_playbook         tempy.txt
+.kube                      Sam            filevariables.sh  myfileswithvar.sh       parurole              textnew
+.landscape                 Thoughts       frndsinarray.sh   myfileswithvari.sh      parvathi_playbook     thoughts.txt
+.local                     abcIMpex       fruit.sh          myfilewithvar.sh        playbook              world
+.motd_shown                abcImpex       func_demo.sh      myfilewithvariables.sh  prime.sh              world.sh
+.profile                   abcimpex       helloscript.sh    myfilewithvars.sh       reading.sh            xyz
+.python_history            allperms       hi                mytext.txt              sayhi                 zing
+.python_history-00207.tmp  args.sh        hiscript.sh       mytext1.txt             script.sh
+.sudo_as_admin_successful  bashaliases    ifelse.sh         newcreate               scriptfilevar.sh
+.viminfo                   bootcamp       initialgalaxy     newtext                 shellfile
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       abcimpex       fileVariable.sh   mango.sh                newcreate             playbook          temp
+AbcImpex       allperms       filevariables.sh  metafirms               newtext               prime.sh          tempy
+Alex           args.sh        frndsinarray.sh   multicontnet.txt        odd_or_even.sh        reading.sh        tempy.txt
+Amy            bashaliases    fruit.sh          multiplesof5.sh         oddnumber.sh          sayhi             textnew
+Dany           bootcamp       func_demo.sh      mycommands.sh           oddnumbers.sh         script.sh         thoughts.txt
+Employee.yml   bugfile.txt    helloscript.sh    mycontnet.txt           outputfile.txt        scriptfilevar.sh  world
+Hashmum        dore           hi                myfileswithvar.sh       parentfldr1           shellfile         world.sh
+InitialGalaxy  dragonfly.txt  hiscript.sh       myfileswithvari.sh      parentfolder          shellfile.sh      xyz
+Play.yml       example.sh     ifelse.sh         myfilewithvar.sh        parrole               shellscripting    zing
+Sam            favfoods.sh    initialgalaxy     myfilewithvariables.sh  paru_orchestrate.yml  shellvar.sh
+Thoughts       fibonacci.sh   input.sh          myfilewithvars.sh       paru_playbook         smil.yml
+abcIMpex       file.sh        loon              mytext.txt              parurole              start-tomcat
+abcImpex       file.txt       loop.sh           mytext1.txt             parvathi_playbook     sum.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ nano fruit.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 fruit.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./fruit.sh
+demo of if-else
+enter a fruit name
+mango
+I like mangoes
+parvathi98@LAPTOP-GIMPBL0O:~$ nano loop.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod 774 loop.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./loop.sh
+loop demo
+Enter a number
+7
+1 number is 7
+Enter a number
+9
+2 number is 9
+Enter a number
+89
+3 number is 89
+Enter a number
+6
+4 number is 6
+Enter a number
+5
+5 number is 5

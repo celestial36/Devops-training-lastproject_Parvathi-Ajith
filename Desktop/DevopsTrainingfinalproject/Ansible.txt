@@ -1,0 +1,162 @@
+parvathi98@LAPTOP-GIMPBL0O:~$ mkdir varna_playbook
+parvathi98@LAPTOP-GIMPBL0O:~$ cd varna_playbook
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ ansible-galaxy init --force --offline varnarole
+- Role varnarole was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ tree varnarole/
+varnarole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+parvathi98@LAPTOP-GIMPBL0O:~$ cd varna_playbook
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ nano varna_orchestrate.yml
+
+---
+- hosts: tomcat-node
+roles:
+  - {role: install-tomcat}
+  - {role: start-tomcat}
+
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ ansible-galaxy init --force --offline install-tomcat
+- Role install-tomcat was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ ansible-galaxy init --force --offline start-tomcat
+- Role start-tomcat was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ tree install-tomcat/
+install-tomcat/ [error opening dir]
+
+0 directories, 0 files
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ tree install-tomcat/
+install-tomcat/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat/tasks$ nano main.yml
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat/tasks$ cat main.yml
+---
+# tasks file for install-tomcat
+-
+  block:
+    -name: Intsall tomcat art1facts
+     action: >
+      yum name = "demo-tomcat-1"state = present
+     register: output
+  always:
+    -debug:
+     msg:
+      -"Install tomcat artifacts task ended with message: {{Output}}"
+      -"Instaled tomcat artifacts- {{Output.changed}}"
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat/tasks$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/start-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/start-tomcat/tasks$ nano main.yml
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/start-tomcat/tasks$ cat main.yml
+---
+# tasks file for start-tomcat
+#Start tomcat
+-
+  block:
+    -name: Start tomcat
+    command: <path of tomcat>/bin/startup.sh
+    register: output
+    become: true
+
+  always:
+    -debug:
+      msg:
+       -"Start tomcat task ended with message: {{output}}"
+       -"Tomcat started - {{output.changed}}"
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/start-tomcat/tasks$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook/start-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ sudo ansible-playbook -i hosts varna_orchestrate.yml -vvv
+[sudo] password for parvathi98:
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+ERROR! the playbook: varna_orchestrate.yml could not be found
+parvathi98@LAPTOP-GIMPBL0O:~$ cd varna_playbook
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$ sudo ansible-playbook -i hosts varna_orchestrate.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Nov 26 2021, 20:14:08) [GCC 9.3.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+host_list declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+auto declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /home/parvathi98/varna_playbook/hosts as it did not pass its verify_file() method
+[WARNING]: Unable to parse /home/parvathi98/varna_playbook/hosts as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/parvathi98/varna_playbook/varna_orchestrate.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: tomcat-node
+roles:
+^ here
+parvathi98@LAPTOP-GIMPBL0O:~/varna_playbook$
